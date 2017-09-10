@@ -1,0 +1,79 @@
+long_words = [w for w in V if len(w) > 15]
+// return something from a list by a rule
+
+fdist5 = FreqDist(text5)
+sorted(w for w in set(text5) if len(w) > 7 and fdist5[w] > 7)
+// by frequency and rule
+
+Collocations and Bigrams using learning data with recipe pages
+// Collocations are words that are used very frequently together
+// Bigrams are word pairs
+
+[w.upper() for w in text1]
+// addition to the w for w by adding a function
+
+set(word.lower() for word in text1 if word.isalpha())
+// makes all the words lower case to avoid differences in capitilization which are negligble
+
+for word in ['Call', 'me', 'Ishmael', '.']:
+...     print(word)
+...
+// for loop
+
+>>> for token in sent1:
+...     if token.islower():
+...         print(token, 'is a lowercase word')
+...     elif token.istitle():
+...         print(token, 'is a titlecase word')
+...     else:
+...         print(token, 'is punctuation')
+
+import nltk
+
+read list as file(ing_doc)
+  with open(ing_doc) as i:
+    ing_list = i.readlines()
+    
+read list as file(dir_doc)
+  with open(dir_doc) as d:
+    dir_list = d.readlines()
+    
+  ing_coll = ing_list.collocations()
+  tk_ing_list = ing_list.tokenize()
+  tk_ing_coll = ing_coll.tokenize()
+  
+  [coll for coll in ing_collo if not coll in ing_coll]
+  
+    
+  dir_coll = dir_list.collocations()
+  tk_dir_list = dir_list.tokenize()
+  tk_dir_coll = dir_coll.tokenize()
+    
+    //context
+    last_index(word) for word in tk_dir_list
+      dir_coll_conc = dir_coll.concordance(word)
+      
+    not_coll_dir = [coll for coll in tk_dir if not coll in coll_dir]
+    
+    
+    
+    
+    
+    text = nltk.Text(word.lower() for word in nltk.corpus.brown.words())
+      text.similar('woman')
+Building word-context index...
+man day time year car moment world family house boy child country job
+state girl place war way case question
+>>> text.similar('bought')
+made done put said found had seen given left heard been brought got
+set was called felt in that told
+>>> text.similar('over')
+in on to of and for with from at by that into as up out down through
+about all is
+>>> text.similar('the')
+a his this their its her an that our any all one these my in your no
+some other and
+    
+    
+    
+    
